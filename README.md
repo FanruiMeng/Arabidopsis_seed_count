@@ -16,5 +16,4 @@ python3 04_eval.py --logtostderr --checkpoint_dir=train_dir --eval_dir=path/to/e
 python 05_export_inference_graph.py --input_type image_tensor --pipeline_config_path pipeline.config --trained_checkpoint_prefix train_dir/model.ckpt- --output_directory graph_train
 
 6. Detect seeds using trained model
-
 python 06_detect.py
