@@ -1,0 +1,24 @@
+#!/bin/bash --login
+########## Define Resources Needed with SBATCH Lines ##########
+ 
+#SBATCH --time=160:00:00             # limit of wall clock time - how long the job will run (same as -t)
+#SBATCH --ntasks=1                 # number of tasks - how many tasks (nodes) that you require (same as -n)
+#SBATCH --cpus-per-task=3           # number of CPUs (or cores) per task (same as -c)
+#SBATCH --gres=gpu:3     # number of CPUs (or cores) per task (same as -c)
+#SBATCH --mem=260G                    # memory required per node - amount of memory (in bytes)
+#SBATCH --job-name train      # you can give your job a name for easier identification (same as -J)
+#SBATCH --nodes=1
+   
+########## Command Lines to Run ##########
+module load CUDA/9.0.176 cuDNN/7.0.2-CUDA-9.0.176
+module load GCC/5.4.0-2.26 OpenMPI/1.10.3
+module load Python/3.5.2
+ 
+export TF_CPP_MIN_LOG_LEVEL=2
+cd /mnt/home/mengfanr/Arabidopsis_seeds_detect/faster_rcnn_seeds_trained_manual_adjust                  ### change to the directory where your code is located
+PYSCRIPT=/mnt/home/mengfanr/Arabidopsis_seeds_detect/faster_rcnn_seeds_trained_manual_adjust/03_train.py
+PYDIR=$HOME/python-tfgpu
+source $PYDIR/bin/activate
+
+python3 $PYSCRIPT --logtostderr --pipeline_config_path=/mnt/home/mengfanr/Arabidopsis_seeds_detect/faster_rcnn_seeds_trained_manual_adjust/pipeline.config_batch_5_2700X2700 --train_dir=/mnt/home/mengfanr/Arabidopsis_seeds_detect/faster_rcnn_seeds_trained_manual_adjust/train_dir_3_clone_manual_adjust_batch5_2700_2700_proposl_10000 --num_clones=3
+       
