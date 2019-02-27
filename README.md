@@ -1,6 +1,6 @@
 # Seeds-count
 Count Arabidopsis seeds using Tensorflow Faster-RCNN model
-1. Xml to csv, generate a seed_labels.csv file 
+1. Xml to csv, generate a seed_labels.csv file\n
  python 01_xml_to_csv.py
 
 2. Generate the tfrecord file
