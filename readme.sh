@@ -3,14 +3,14 @@ Arabidopsis seeds count using Tensorflow Faster-RCNN model
 please see: 
 https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md
 
-2. Seed annotation using LabelImg
+2. Seed annotation using LabelImg, generate a xml annotation file.
 please see:
 https://github.com/tzutalin/labelImg
 
-3. Xml to csv, generate a seed_labels.csv file 
+3. Xml file to csv file, using 02_xml_to_csv.py generate a seed_labels.csv file 
 python 01_xml_to_csv.py
 
-4. Generate the tfrecord file 
+4. seed_labels.csv file transform to tensorflow tfrecord file 
 python 02_generate_tfrecord.py --csv_input=annotation/seeds_labels.csv --output_path=train.record
 
 5. Download the tensorflow object detection api pre-trained faster rcnn model into your work directory.
