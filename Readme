@@ -6,7 +6,10 @@ Arabidopsis seeds count using Tensorflow Faster-RCNN model
 2. Seed annotation using LabelImg, generate a xml annotation file.
   please see:
   https://github.com/tzutalin/labelImg
-
+  For our project, we split one whole plate image into 4 quater images and annotate quater images mannually.
+  split image:
+  python 00_split_scan_images.py
+ 
 3. Xml file to csv file, using 02_xml_to_csv.py generate a seed_labels.csv file 
   python 01_xml_to_csv.py
 
