@@ -12,7 +12,7 @@
   1. split image:<br>
   python 00_split_scan_images.py
   2. seed annotation
-  <a href="www.baidu.com"></a>
+  <a href="www.baidu.com">baidu</a>
 <h3>3. Xml file transform to csv file</h3>
 using 02_xml_to_csv.py generate a seed_labels.csv file 
   python 01_xml_to_csv.py
