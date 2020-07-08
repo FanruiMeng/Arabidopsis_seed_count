@@ -1,5 +1,6 @@
-<h1>Arabidopsis seeds count using Tensorflow Faster-RCNN model</h1>
-1 Tensorflow object detection API installation, tensorflow version lower than 2.0.
+<h2>Arabidopsis seeds count using Tensorflow Faster-RCNN model</h2>
+<h3>1 Tensorflow object detection API installation</h3>
+  tensorflow version lower than 2.0.
   please see: 
   https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md
 
