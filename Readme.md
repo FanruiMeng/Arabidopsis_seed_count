@@ -37,7 +37,7 @@
     &nbsp;&nbsp;}<br>
   
   &nbsp;&nbsp;label_map_path: "mscoco_label_map.pb<br>
-
+}
   <h4>b. The label_map.pbtxt file like below:</h4>
   item {<br>
     id: 1
