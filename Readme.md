@@ -9,9 +9,9 @@
   LabelImag please see:<br>
   https://github.com/tzutalin/labelImg<br>
   For our project, we split one whole plate image into 4 quater images and annotate quater images mannually.<br>
-  <b>1. split image:</b><br>
+  <b>a. split image:</b><br>
   python 00_split_scan_images.py<br>
-  <b>2. seed annotation</b>
+  <b>b. seed annotation</b>
   <img src=""  alt="Seed annotation" />
 <h3>3. Xml file transform to csv file</h3>
   pyhton 02_xml_to_csv.py<br>
@@ -26,12 +26,20 @@
   python 02_generate_tfrecord.py --csv_input=annotation/seeds_labels.csv --output_path=train.record
 
 <h3>5 Download tensorflow object detection api pre-trained faster rcnn model to work directory.</h3>
-  wget http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2018_01_28.tar.gz
+  wget http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2018_01_28.tar.gz<br>
   unzip faster_rcnn_inception_v2_coco_2018_01_28.tar.gz
 
-6. Run tensorflow pre-trained faster-rcnn model using your own dataset
-  a. Change the input path into your train.record absolute path at train_input_reader in pipeline configure file
-  b. Change the label_map_path into your label_map.pbtxt path. The label_map.pbtxt file like below:
+<h3>6 pipeline configuration
+  <h4>a. input configuration</h4>
+  train_input_reader: {
+    tf_record_input_reader {
+      input_path: "train.record"
+    }
+  
+  label_map_path: "mscoco_label_map.pbtxt"
+  }
+
+  <h4>b. The label_map.pbtxt file like below:</h4>
   item {
     id: 1
     name: "seed"
