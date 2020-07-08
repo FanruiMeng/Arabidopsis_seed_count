@@ -54,3 +54,6 @@
 <h3>10 Accuracy measurement</h3>
 Measure accuracy, precision, recall and f1 at IOU 0.5 using 07_01_accuracy_measurement.py <br>
 python 07_01_accuracy_measurement.py ground.csv detected.csv
+<h3>11 seed density</h3>
+Average seed number in a circle with a radius of 30 pixels.<br>
+Rscript seed_density.r
