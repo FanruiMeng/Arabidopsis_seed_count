@@ -4,7 +4,7 @@
   please see: 
   https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md
 
-<h3>2 Seed annotation<h3>
+<h3>2 Seed annotation</h3>
   we uss LabelImg annotate our seeds, LabelImg generate a xml annotation file.
   LabelImag please see:
   https://github.com/tzutalin/labelImg
