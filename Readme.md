@@ -52,4 +52,5 @@
 <h3>9 Detect seeds using trained model </h3>
   python 06_detect.py
 <h3>10 Accuracy measurement</h3>
+Measure accuracy, precision, recall and f1 using 07_01_accuracy_measurement.py <br>
 python 07_01_accuracy_measurement.py ground.csv detected.csv
