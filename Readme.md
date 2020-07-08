@@ -40,8 +40,8 @@
 }
   <h4>b. The label_map.pbtxt file like below:</h4>
   item {<br>
-    id: 1
-    name: "seed"<br>
+    &nbsp;&nbsp;id: 1<br>
+    &nbsp;&nbsp;name: "seed"<br>
   }<br>
   c. Another configurations please see: 
   https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/configuring_jobs.md
