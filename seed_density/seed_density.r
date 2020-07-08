@@ -1,5 +1,5 @@
-setwd("C:\\Users\\Fanrui Meng\\Desktop\\crowd_density")
-all_seeds <- read.table("seeds_labels.csv",stringsAsFactors=F,sep=",",header=FALSE)
+setwd("")
+all_seeds <- read.table("scan21_111918022.jpg_0_2.jpg.csv",stringsAsFactors=F,sep=",",header=FALSE)
 
 imgs <- unique(all_seeds[,1])
 
@@ -7,7 +7,6 @@ for(i in imgs){
 	seeds <- subset(all_seeds,all_seeds[,1]==i)
 	seeds[,9]<-(seeds[,5]+seeds[,7])/2
 	seeds[,10]<-(seeds[,6]+seeds[,8])/2
-	#每个种子中心点30个像素圈里种子数
 	column <- c()
 	for(i in  1:nrow(seeds)){
 		tem<-c()
@@ -25,4 +24,4 @@ for(i in imgs){
 	imgs<-rbind(imgs,mean(column[1,]))
 }
 
-write.table(imgs, "all_imgs_seeds_density.txt", sep=',',row.names=F,col.names=F)
+write.table(imgs, "seeds_density.txt", sep=',',row.names=F,col.names=F)
