@@ -4,8 +4,9 @@
   please see: 
   https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md
 
-2. Seed annotation using LabelImg, generate a xml annotation file.
-  please see:
+<h3>2 Seed annotation<h3>
+  we uss LabelImg annotate our seeds, LabelImg generate a xml annotation file.
+  LabelImag please see:
   https://github.com/tzutalin/labelImg
   For our project, we split one whole plate image into 4 quater images and annotate quater images mannually.
   split image:
