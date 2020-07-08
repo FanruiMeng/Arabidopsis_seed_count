@@ -9,9 +9,10 @@
   LabelImag please see:<br>
   https://github.com/tzutalin/labelImg<br>
   For our project, we split one whole plate image into 4 quater images and annotate quater images mannually.<br>
-  split image:<br>
+  1. split image:<br>
   python 00_split_scan_images.py
- 
+  2. seed annotation
+  <a href="www.baidu.com"></a>
 <h3>3. Xml file transform to csv file</h3>
 using 02_xml_to_csv.py generate a seed_labels.csv file 
   python 01_xml_to_csv.py
