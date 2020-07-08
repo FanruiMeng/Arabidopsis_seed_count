@@ -16,7 +16,7 @@
 <h3>3. Xml file transform to csv file</h3>
   pyhton 02_xml_to_csv.py<br>
   The results is a csv file.
-  <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td>aa</td> <td>aa</td> <td>aa</td> <td>aa</td> <td>aa</td>
 4. seed_labels.csv file transform to tensorflow tfrecord file 
   python 02_generate_tfrecord.py --csv_input=annotation/seeds_labels.csv --output_path=train.record
 
