@@ -32,11 +32,11 @@
 <h3>6 pipeline configuration
   <h4>a. input configuration</h4>
   train_input_reader: {<br>
-    </t>tf_record_input_reader {<br>
-     </t> input_path: "train.record"<br>
-    }<br>
+  &nbsp;&nbsp;tf_record_input_reader {<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;input_path: "train.record"<br>
+    &nbsp;&nbsp;}<br>
   
-  label_map_path: "mscoco_label_map.pb<br>
+  &nbsp;&nbsp;label_map_path: "mscoco_label_map.pb<br>
 
   <h4>b. The label_map.pbtxt file like below:</h4>
   item {<br>
