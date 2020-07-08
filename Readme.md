@@ -32,8 +32,8 @@
 <h3>6 pipeline configuration
   <h4>a. input configuration</h4>
   train_input_reader: {<br>
-    tf_record_input_reader {<br>
-      input_path: "train.record"<br>
+    </t>tf_record_input_reader {<br>
+     </t> input_path: "train.record"<br>
     }<br>
   
   label_map_path: "mscoco_label_map.pb<br>
