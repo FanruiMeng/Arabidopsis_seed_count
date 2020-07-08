@@ -25,7 +25,7 @@
 <h3>4. seed_labels.csv transform to tensorflow tfrecord file </h3>
   python 02_generate_tfrecord.py --csv_input=annotation/seeds_labels.csv --output_path=train.record
 
-5. Download the tensorflow object detection api pre-trained faster rcnn model into your work directory.
+<h3>5 Download tensorflow object detection api pre-trained faster rcnn model to work directory.</h3>
   wget http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2018_01_28.tar.gz
   unzip faster_rcnn_inception_v2_coco_2018_01_28.tar.gz
 
