@@ -12,7 +12,7 @@
   <b>a. split image:</b><br>
   python 00_split_scan_images.py<br>
   <b>b. seed annotation</b>
-  <img src=""  alt="Seed annotation" />
+  <img src="https://github.com/FanruiMeng/Arabidopsis_seed_count/blob/master/Images/seed_annotation.png?raw=true"  alt="Seed annotation" />
 <h3>3 Xml file transform to csv file</h3>
   pyhton 02_xml_to_csv.py<br>
   Results is a csv file,like this:<br><br>
