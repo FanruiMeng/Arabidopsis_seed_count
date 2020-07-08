@@ -10,13 +10,13 @@
   https://github.com/tzutalin/labelImg<br>
   For our project, we split one whole plate image into 4 quater images and annotate quater images mannually.<br>
   <b>a. split image:</b><br>
-  <table>
-  <tr><td width="400"><i>python 00_split_scan_images.py</i></td></tr>
-  </table>
-  <b>b. seed annotation</b>
+  
+<i>python 00_split_scan_images.py</i>
+<b>b. seed annotation</b>
   <img src="https://github.com/FanruiMeng/Arabidopsis_seed_count/blob/master/Images/seeds_annotation.png?raw=true"  alt="Seed annotation" height="200" width="300"/>
 <h3>3 Xml file transform to csv file</h3>
   <i>pyhton 02_xml_to_csv.py</i><br>
+  
   Results is a csv file, like this:<br><br>
   <table>
   <tr><td><b>filename</b></td> <td><b>width</b></td> <td><b>height</b></td> <td><b>class</b></td> <td><b>xmin</b></td><td><b>ymin</b></td><td><b>xmax</b></td><td><b>ymax</b></td></tr>
@@ -25,6 +25,7 @@
   <tr><td>..</td> <td>..</td> <td>..</td> <td>..</td> <td>..</td><td>..</td><td>..</td><td>..</td></tr>
   </table>
 <h3>4. seed_labels.csv transform to tensorflow tfrecord file </h3>
+
   <i>python 02_generate_tfrecord.py --csv_input=annotation/seeds_labels.csv --output_path=train.record</i>
 
 <h3>5 Download tensorflow object detection api pre-trained faster rcnn model to work directory.</h3>
