@@ -14,9 +14,9 @@
   <b>2. seed annotation</b>
   <img src=""  alt="Seed annotation" />
 <h3>3. Xml file transform to csv file</h3>
-using 02_xml_to_csv.py generate a seed_labels.csv file 
-  python 01_xml_to_csv.py
-
+  pyhton 02_xml_to_csv.py<br>
+  The results is a csv file.
+  <td></td> <td></td> <td></td> <td></td> <td></td>
 4. seed_labels.csv file transform to tensorflow tfrecord file 
   python 02_generate_tfrecord.py --csv_input=annotation/seeds_labels.csv --output_path=train.record
 
