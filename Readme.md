@@ -10,9 +10,7 @@
   https://github.com/tzutalin/labelImg<br>
   For our project, we split one whole plate image into 4 quater images and annotate quater images mannually.<br>
   <b>a. split image:</b><br>
-  '''bash
   <i>python 00_split_scan_images.py</i><br>
-  '''
   <b>b. seed annotation</b>
   <img src="https://github.com/FanruiMeng/Arabidopsis_seed_count/blob/master/Images/seeds_annotation.png?raw=true"  alt="Seed annotation" height="200" width="300"/>
 <h3>3 Xml file transform to csv file</h3>
