@@ -14,9 +14,10 @@
   <b>b. seed annotation</b>
   <img src="https://github.com/FanruiMeng/Arabidopsis_seed_count/blob/master/Images/seeds_annotation.png?raw=true"  alt="Seed annotation" height="200" width="300"/>
 <h3>3 Xml file transform to csv file</h3>
-  ```bash
+ ```python
   <i>pyhton 02_xml_to_csv.py</i>
-  ```<br>
+ ```
+ <br>
   Results is a csv file, like this:<br><br>
   <table>
   <tr><td><b>filename</b></td> <td><b>width</b></td> <td><b>height</b></td> <td><b>class</b></td> <td><b>xmin</b></td><td><b>ymin</b></td><td><b>xmax</b></td><td><b>ymax</b></td></tr>
