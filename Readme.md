@@ -15,9 +15,11 @@
   <img src=""  alt="Seed annotation" />
 <h3>3. Xml file transform to csv file</h3>
   pyhton 02_xml_to_csv.py<br>
-  The results is a csv file.<br>
+  Results is a csv file.<br>
   <table border='0.1'>
   <tr><td>filename</td> <td>width</td> <td>height</td> <td>class</td> <td>xmin</td><td>ymin</td><td>xmax</td><td>ymax</td></tr>
+  <tr><td>scan21_111918022.jpg</td> <td>2900</td> <td>2900</td> <td>seed</td> <td>1325</td><td>813</td><td>1352</td><td>837</td></tr>
+  <tr><td>>..</td> <td>..</td> <td>..</td> <td>..</td> <td>..</td><td>..</td><td>..</td><td>..</td></tr>
   </table>
 <h3>4. seed_labels.csv transform to tensorflow tfrecord file </h3>
   python 02_generate_tfrecord.py --csv_input=annotation/seeds_labels.csv --output_path=train.record
