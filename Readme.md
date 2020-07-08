@@ -45,15 +45,11 @@
   }<br>
   c. Another configurations please see: 
   https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/configuring_jobs.md
-  d. Model training
+<h3>7. Model training<h3>
   python3 03_train.py --logtostderr --pipeline_config_path=pipeline.config --train_dir=train_dir --num_clones=3
 
-7. Evaluate model 
-  #Evalutaing and training must run at same time
-  python3 04_eval.py --logtostderr --checkpoint_dir=train_dir --eval_dir=path/to/eval_dir --pipeline_config_path=pipeline_config
-
-8. Generate frozen model 
+<h3>8. Generate frozen model </h3>
   python3 05_export_inference_graph.py --input_type image_tensor --pipeline_config_path pipeline.config --trained_checkpoint_prefix train_dir/model.ckpt- --output_directory graph_train
 
-9. Detect seeds using trained model 
+<h3>9. Detect seeds using trained model </h3>
   python 06_detect.py
