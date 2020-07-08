@@ -31,19 +31,18 @@
 
 <h3>6 pipeline configuration
   <h4>a. input configuration</h4>
-  train_input_reader: {
-    tf_record_input_reader {
-      input_path: "train.record"
-    }
+  train_input_reader: {<br>
+    tf_record_input_reader {<br>
+      input_path: "train.record"<br>
+    }<br>
   
-  label_map_path: "mscoco_label_map.pbtxt"
-  }
+  label_map_path: "mscoco_label_map.pb<br>
 
   <h4>b. The label_map.pbtxt file like below:</h4>
-  item {
+  item {<br>
     id: 1
-    name: "seed"
-  }
+    name: "seed"<br>
+  }<br>
   c. Another configurations please see: 
   https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/configuring_jobs.md
   d. Model training
