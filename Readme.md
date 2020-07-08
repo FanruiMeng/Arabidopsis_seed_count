@@ -6,12 +6,12 @@
 
 <h3>2 Seed annotation</h3>
   we use LabelImg annotate our seeds, LabelImg generate a xml annotation file.<br>
-  LabelImag please see:<br>
+  LabelImg please see:<br>
   https://github.com/tzutalin/labelImg<br>
   For our project, we split one whole plate image into 4 quater images and annotate quater images mannually.<br>
   <b>a. split image:</b><br>
   <table>
-  <tr><td width="90%"><i>python 00_split_scan_images.py</i></td></tr>
+  <tr><td width="400"><i>python 00_split_scan_images.py</i></td></tr>
   </table>
   <b>b. seed annotation</b>
   <img src="https://github.com/FanruiMeng/Arabidopsis_seed_count/blob/master/Images/seeds_annotation.png?raw=true"  alt="Seed annotation" height="200" width="300"/>
