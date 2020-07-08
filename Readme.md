@@ -14,7 +14,7 @@
   <b>b. seed annotation</b>
   <img src="https://github.com/FanruiMeng/Arabidopsis_seed_count/blob/master/Images/seeds_annotation.png?raw=true"  alt="Seed annotation" height="200" width="300"/>
 <h3>3 Xml file transform to csv file</h3>
-  pyhton 02_xml_to_csv.py<br>
+  <i>pyhton 02_xml_to_csv.py</i><br>
   Results is a csv file, like this:<br><br>
   <table>
   <tr><td><b>filename</b></td> <td><b>width</b></td> <td><b>height</b></td> <td><b>class</b></td> <td><b>xmin</b></td><td><b>ymin</b></td><td><b>xmax</b></td><td><b>ymax</b></td></tr>
@@ -23,7 +23,7 @@
   <tr><td>..</td> <td>..</td> <td>..</td> <td>..</td> <td>..</td><td>..</td><td>..</td><td>..</td></tr>
   </table>
 <h3>4. seed_labels.csv transform to tensorflow tfrecord file </h3>
-  python 02_generate_tfrecord.py --csv_input=annotation/seeds_labels.csv --output_path=train.record
+  <i>python 02_generate_tfrecord.py --csv_input=annotation/seeds_labels.csv --output_path=train.record</i>
 
 <h3>5 Download tensorflow object detection api pre-trained faster rcnn model to work directory.</h3>
   wget http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2018_01_28.tar.gz<br>
@@ -46,14 +46,14 @@
   c. Another configurations please see: 
   https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/configuring_jobs.md
 <h3>7 Model training</h3>
-  python3 03_train.py --logtostderr --pipeline_config_path=pipeline.config --train_dir=train_dir --num_clones=3
+  <i>python3 03_train.py --logtostderr --pipeline_config_path=pipeline.config --train_dir=train_dir --num_clones=3</i>
 <h3>8 Generate frozen model </h3>
-  python3 05_export_inference_graph.py --input_type image_tensor --pipeline_config_path pipeline.config --trained_checkpoint_prefix train_dir/model.ckpt- --output_directory graph_train
+  <i>python3 05_export_inference_graph.py --input_type image_tensor --pipeline_config_path pipeline.config --trained_checkpoint_prefix train_dir/model.ckpt- --output_directory graph_train</i>
 <h3>9 Detect seeds using trained model </h3>
-  python 06_detect.py
+  <i>python 06_detect.py</i>
 <h3>10 Accuracy measurement</h3>
 Measure accuracy, precision, recall and f1 at IOU 0.5 using 07_01_accuracy_measurement.py <br>
-python 07_01_accuracy_measurement.py ground.csv detected.csv
+<i>python 07_01_accuracy_measurement.py ground.csv detected.csv</i>
 <h3>11 seed density</h3>
 Average seed number in a circle with a radius of 30 pixels.<br>
-Rscript seed_density.r
+<i>Rscript seed_density.r</i>
