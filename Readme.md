@@ -13,7 +13,7 @@
   python 00_split_scan_images.py<br>
   <b>b. seed annotation</b>
   <img src=""  alt="Seed annotation" />
-<h3>3. Xml file transform to csv file</h3>
+<h3>3 Xml file transform to csv file</h3>
   pyhton 02_xml_to_csv.py<br>
   Results is a csv file,like this:<br><br>
   <table>
