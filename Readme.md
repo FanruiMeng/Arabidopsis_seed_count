@@ -10,7 +10,7 @@
   https://github.com/tzutalin/labelImg<br>
   For our project, we split one whole plate image into 4 quater images and annotate quater images mannually.<br>
   <b>1. split image:</b><br>
-  python 00_split_scan_images.py
+  python 00_split_scan_images.py<br>
   <b>2. seed annotation</b>
   <img src=""  alt="Seed annotation" />
 <h3>3. Xml file transform to csv file</h3>
