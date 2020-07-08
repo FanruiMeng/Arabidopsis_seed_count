@@ -15,9 +15,9 @@
   <img src=""  alt="Seed annotation" />
 <h3>3. Xml file transform to csv file</h3>
   pyhton 02_xml_to_csv.py<br>
-  Results is a csv file.<br><br>
+  Results is a csv file,like this:<br><br>
   <table>
-  <tr><b><td>filename</td> <td>width</td> <td>height</td> <td>class</td> <td>xmin</td><td>ymin</td><td>xmax</td><td>ymax</td></b></tr>
+  <tr><td><b>filename</b></td> <td><b>width</b></td> <td><b>height</b></td> <td><b>class</b></td> <td><b>xmin</b></td><td><b>ymin</b></td><td><b>xmax</b></td><td><b>ymax</b></td></tr>
   <tr><td>scan21_111918022.jpg</td> <td>2900</td> <td>2900</td> <td>seed</td> <td>1325</td><td>813</td><td>1352</td><td>837</td></tr>
   <tr><td>scan21_111918022.jpg</td> <td>2900</td> <td>2900</td> <td>seed</td> <td>664</td><td>1094</td><td>691</td><td>1116</td></tr>
   <tr><td>..</td> <td>..</td> <td>..</td> <td>..</td> <td>..</td><td>..</td><td>..</td><td>..</td></tr>
