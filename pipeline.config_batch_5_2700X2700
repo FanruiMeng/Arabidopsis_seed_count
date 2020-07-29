@@ -7,8 +7,8 @@ model {
         #max_dimension: 1024
       #}
       fixed_shape_resizer {
-          height: 2700
-          width: 2700
+          height: 2900
+          width: 2900
           resize_method: AREA
       }
     }
